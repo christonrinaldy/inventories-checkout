@@ -27,23 +27,25 @@ route.post('/cart', (req, res) => {
                 })
     
 })
-function main(val) {
-    switch (val) {
-        case 'checkout':
-            checkOutService.checkOut();
-            break;
-        default:
-            inventory.getProductBySku(val)
-                .then(res => {
-                    if (res) {
-                        cart.addProduct(res)
-                    } else {
-                        console.log("product not found")
-                    }
-                })
-            break;
-    }
-}
+
+// i thought it was a console program
+// function main(val) {
+//     switch (val) {
+//         case 'checkout':
+//             checkOutService.checkOut();
+//             break;
+//         default:
+//             inventory.getProductBySku(val)
+//                 .then(res => {
+//                     if (res) {
+//                         cart.addProduct(res)
+//                     } else {
+//                         console.log("product not found")
+//                     }
+//                 })
+//             break;
+//     }
+// }
 // function stdinLineByLine() {
 //     const stdin = new EventEmitter();
 
