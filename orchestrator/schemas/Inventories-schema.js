@@ -35,7 +35,6 @@ const resolvers = {
         inputProductToCart: async(parents, args, context, info) => {
             const {prod} = args;
             const {data} = await axios.post("http://localhost:3001/cart", prod);
-            console.log(data)
             return data
         }
     }
