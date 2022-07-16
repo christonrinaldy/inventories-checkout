@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "prestart": "npm install",
+    "start": "node app.js",
     "test": "mocha app.test.js"
   },
   "dependencies": {
