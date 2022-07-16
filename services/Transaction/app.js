@@ -8,6 +8,6 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use(router)
 app.listen(port, () => {
-    console.log("app is listening", port)
+    console.log("app is to listening", `http://localhost:${port}`)
 })
 
